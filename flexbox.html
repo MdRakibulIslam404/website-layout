@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            border: 2px dotted teal;
+            height: 500px;
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* justify-content: left;
+            justify-content: right; */
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* align-items: flex-end;
+            align-items: center;
+            align-items: stretch;   */
+        }
+
+        .box {
+            /* height: 200px; */
+            width: 200px;
+            /* font-size: 3em; */
+            border: 3px dashed rgb(0, 123, 255);
+        }
+
+        #box-1 {
+            order: 2;
+        }
+
+        #box-2 {
+            order: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now</h1>
+</body>
+<div class="container">
+    <div id="box-1" class="box">BOX-1</div>
+    <div id="box-2" class="box">
+        <h3>BOX-2</h3>
+        <div class="article blog">
+            <h4>blog-1</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quos repellat quo amet, ad maiores impedit
+                doloribus aliquam a voluptates aperiam modi incidunt provident blanditiis at? Dolore quod blanditiis
+                rerum?</p>
+        </div>
+        <div class="article blog">
+            <h4>blog-2</h4>
+            <p>Magnam, ea quo. Fuga odit quaerat voluptatum, maxime rem dicta rerum impedit, suscipit vero eveniet alias
+                minima ea aliquam eum error soluta necessitatibus obcaecati. Delectus facilis odit repudiandae quia ex?
+            </p>
+        </div>
+        <div class="article blog">
+            <h4>blog-3</h4>
+            <p>Maxime placeat quibusdam delectus ullam obcaecati omnis iusto adipisci repellendus vero architecto, unde,
+                impedit amet earum, recusandae doloribus. Atque modi mollitia facilis quidem inventore eaque sapiente,
+                aperiam similique quia odio?</p>
+        </div>
+    </div>
+</div>
+
+</html>
